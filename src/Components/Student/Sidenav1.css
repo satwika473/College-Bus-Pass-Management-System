@@ -1,0 +1,90 @@
+.body-style {
+  margin: 0;
+  font-family: monospace;
+  overflow: hidden; /* Prevent scrolling */
+}
+
+.slider {
+  width: 100vw; /* Full width of the viewport */
+  height: 100vh; /* Full height of the viewport */
+  margin: 0; /* Remove any margins */
+  position: relative;
+  overflow: hidden; /* Hide overflow to avoid scrollbars */
+}
+
+.list {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  display: flex;
+  width: max-content;
+  transition: 1s ease-in-out; /* Smooth sliding transition */
+}
+
+.list img {
+  width: 100vw; /* Adjust image width to fit the viewport */
+  height: 100vh; /* Adjust image height to fit the viewport */
+  object-fit: cover; /* Ensures the image scales proportionally and covers the entire area */
+}
+
+.buttons {
+  position: absolute;
+  top: 50%; /* Center vertically */
+  left: 5%;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%); /* Adjust for proper centering */
+}
+
+.buttons button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5); /* Transparent background */
+  color: #fff;
+  border: none;
+  font-family: monospace;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.dots {
+  position: absolute;
+  bottom: 20px; /* Distance from the bottom */
+  color: #fff;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  transition: 1s;
+}
+
+.dots li {
+  list-style: none;
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  margin: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dots li.active {
+  width: 20px; /* Larger dot for active slide */
+  background-color: #f00; /* Different color for active dot */
+}
+
+@media screen and (max-width: 768px) { 
+  .slider {
+    height: 100vh; /* Ensure full height for smaller devices */
+  }
+
+  .buttons button {
+    width: 40px;
+    height: 40px;
+  }
+}

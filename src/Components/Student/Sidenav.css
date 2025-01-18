@@ -1,0 +1,117 @@
+.toolbar{
+    width:100%;
+    height:90px;
+    background-color: #2a70a5;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index: 3;
+  }
+  .toolbar-nav{
+    height:100%;
+    display:flex;
+    align-items:center;
+    padding:0 1rem;
+  }
+   ul, a{
+    text-decoration: none;
+    list-style:none;
+    color:#fbfbfb;
+  }
+  ul a:hover{
+    color:orange;
+    transition: ease .5s;
+  }
+  ul{
+    display:flex;
+  }
+  li{
+    margin:0 2rem;
+    font-size:1.2rem;
+  }
+  .logo{
+    font-size:1.5rem;
+    margin-bottom:.3rem;
+    margin-left:.6rem;
+    font-family: "Times New Roman", serif;
+  }
+  .spacer{
+    display:flex;
+    flex:1;
+  }
+  .toggle-Btn{
+    width:30px;
+    height:30px;
+    background:transparent;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    margin:0 1.2rem 0 1rem;
+    border:none;
+    cursor:pointer;
+    
+  }
+  .btn-line{
+    width:100%;
+    height:4px;
+    background-color:#cdcaca;
+  }
+  .sidebar{
+    max-width:360px;
+    width:70%;
+    height:100%;
+    position:fixed;
+    background-color:#2a70a5;
+    box-shadow: 8px 0px 5px rgba(77, 75, 75, 0.7);
+    top:0;
+    left:-100%;
+    z-index:200;
+    transition: left ease .8s;
+  }
+  .sidebar-ul li{
+    margin: 2rem 0 ;
+    font-size:1.4rem;
+    cursor:pointer;
+  }
+  .sidebar-ul{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    height:100%;
+    align-items:center;
+    margin-left:3rem;
+  }
+  .close-btn{
+    width:30px;
+    height:40px;
+    float:right;
+    margin:1rem;
+    background:transparent;
+    border:none;
+    cursor:pointer;
+    font-size:2rem;
+    color:#fff
+  }
+  .backDrop{
+    width: 100%;
+    height:100%;
+    background-color: rgba(0,0,0,0.7);
+    position:fixed;
+    z-index:100;
+    top:0;
+    right:0;
+    bottom:0;
+  /*   transition: right ease 1.2s; */
+  }
+  .sidebar.active{
+    left:0;
+    transition: left ease .5s;
+  }
+  
+  main{
+   
+    margin-top:80px;
+    margin-left:1rem;
+  }
+  
+  

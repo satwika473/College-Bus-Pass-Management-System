@@ -1,0 +1,134 @@
+/* ManagePass.css */
+
+/* Container for the entire Manage Pass page */
+.manage-pass-container {
+    padding: 20px;
+ 
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+  }
+  
+  /* Table styling */
+  .manage-pass-table {
+    width: 100%;
+   
+    border-collapse: collapse;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 130, 236);
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 80%;
+    max-width: 600px;
+    max-height: 80%;
+    overflow-y: auto;
+    z-index: 1000;
+  }
+  .manage-pass-table th,
+  .manage-pass-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  .bus-pass-row {
+    display: flex;
+    justify-content: space-between; /* Ensures even spacing across the row */
+    align-items: center;
+    flex-wrap: wrap; /* Allows wrapping for smaller screens */
+    margin: 10px 0; /* Adds vertical spacing */
+    gap: 20px; /* Creates uniform spacing between elements */
+  }
+  
+  .bus-pass-row span {
+    white-space: pre; /* Ensures tab spaces are respected */
+    font-size: 14px; /* Adjust font size as needed */
+  }
+  
+  .manage-pass-table th {
+    background-color: #41b051;
+    color: #333;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .manage-pass-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .manage-pass-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .no-data {
+    text-align: center;
+    margin-top: 20px;
+    color: #999;
+    font-size: 18px;
+  }
+  
+  /* Loading spinner or message */
+  .loading {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px;
+    color: #555;
+  }
+  
+  /* Buttons for actions */
+  .action-btn {
+    padding: 6px 12px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+  }
+  
+  .action-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .action-btn:focus {
+    outline: none;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
+  }
+  .manage-pass-table {
+    width: 100%;
+    overflow-x: auto;
+    display: block;
+  }
+  .close-btn-bottom {
+    display: block;
+    margin: 20px auto 0; /* Centered horizontally */
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #f75c14;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .close-btn-bottom:hover {
+    background-color: #0056b3;
+  }
+  
+  .close-btn-bottom:focus {
+    outline: none;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
+  }

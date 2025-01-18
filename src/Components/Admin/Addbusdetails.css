@@ -1,0 +1,65 @@
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #343a40;
+  font-size: 1.2rem;
+}
+
+.container label {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.container input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.container input:focus {
+  border-color: #80bdff;
+  outline: none;
+}
+
+.container button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.container button:hover {
+  background-color: #0056b3;
+}
+
+.stage-container, .bus-container {
+  margin-bottom: 20px;
+}
+
+.stage-container div, .bus-container div {
+  display: flex;
+  gap: 10px;
+}
+
+.stage-container input, .bus-container input {
+  flex: 1;
+}

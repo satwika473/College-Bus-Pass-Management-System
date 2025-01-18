@@ -1,0 +1,50 @@
+/* Center the entire container */
+.stages-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Space between items */
+}
+
+.stage-item {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9f9f9;
+}
+
+.stage-name {
+  font-weight: bold;
+  color: #333;
+}
+
+.stage-fee {
+  font-weight: normal;
+  color: #555;
+}
+.stages-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.stage-item {
+  cursor: pointer;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 5px 0;
+  background-color: #f9f9f9;
+  transition: all 0.3s ease;
+}
+
+.stage-item.selected {
+  background-color: #a5d6a7; /* Green color for selected stage */
+  color: #000;
+}
+
+.stage-item:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
